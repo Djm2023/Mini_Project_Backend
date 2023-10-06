@@ -1,15 +1,17 @@
-const express = require("express");
-const port = 8000;
+import express from 'express';
+import ProductController from "./src/controllers/product.controller.js";
 const app = express();
+const port = 8000;
+
+const productController = new ProductController();
 
 
+app.get("/", productController.getProducts);
+app.use(express.static("src/views"));
 
-app.get("/", (req, res) => {
-  res.send("First step towards learning Express framework of Node.js");
-});
 app.listen(port, (err) => {
   if (err) {
-    console.log("Error in running the server");
+    console.log("Error in firing server");
   }
-  console.log(`Server is up and running on port ::::${port}`);
+  console.log(`Server is running on :: ${port}`);
 });

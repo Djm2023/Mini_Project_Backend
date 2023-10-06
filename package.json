@@ -1,6 +1,7 @@
 {
   "name": "mini_project",
   "version": "1.0.0",
+  "type": "module",
   "description": "Mini Project",
   "main": "index.js",
   "scripts": {
