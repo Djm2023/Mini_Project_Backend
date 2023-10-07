@@ -1,51 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav class="bg-black w-screen h-20 flex items-center container">
-      <div class="text-white font-bold text-2xl w-2/12">
-        <h1>Inventory App</h1>
-      </div>
-      <div class="nav-lists">
-        <ul class="text-white flex">
-          <li class="pr-5">Home</li>
-          <li class="pr-5">Products</li>
-          <li class="pr-5">Register</li>
-          <li class="pr-5">About Us</li>
-          <li class="pr-5">Contact Us</li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container mt-5 border-2 flex justify-center items-center">
-      <div class="inner-container w-4/5 bg-black shadow-lg rounded-lg">
-        <ul class="flex border-b-2 font-bold text-xl py-5 ml-1">
-          <li class="text-white w-1/12">ID</li>
-          <li class="text-white w-1/6">Name</li>
-          <li class="text-white w-5/12">Description</li>
-          <li class="text-white w-1/6">Price</li>
-          <li class="text-white w-1/6">Image</li>
-        </ul>
-        <% product.map(items => { %>
-        <ul class="flex h-52 mt-5">
-          <li class="text-white w-1/12"><%= items.id%></li>
-          <li class="text-white w-1/6"><%= items.name%></li>
-          <li class="text-white w-5/12"><%= items.description %></li>
-          <li class="text-white w-1/6"><%= items.price%></li>
-          <li class="text-white w-1/6">
-            <img
-              class="h-44 w-40"
-              src="https://5.imimg.com/data5/SELLER/Default/2022/2/UA/RV/VK/147304712/whatsapp-image-2022-02-20-at-5-05-40-pm-4-.jpeg"
-              alt="Product-Image"
-            />
-          </li>
-        </ul>
-        <% }) %>
-      </div>
-    </div>
-  </body>
-</html>
+<div class="inner-container w-4/5 bg-black shadow-lg rounded-lg">
+  <ul class="flex border-b-2 font-bold text-xl py-5 ml-1">
+    <li class="text-white w-1/12">ID</li>
+    <li class="text-white w-1/6">Name</li>
+    <li class="text-white w-5/12">Description</li>
+    <li class="text-white w-1/6">Price</li>
+    <li class="text-white w-1/6">Image</li>
+  </ul>
+  <% product.map(items => { %>
+  <ul class="flex h-52 mt-5">
+    <li class="text-white w-1/12"><%= items.id%></li>
+    <li class="text-white w-1/6"><%= items.name%></li>
+    <li class="text-white w-5/12"><%= items.description %></li>
+    <li class="text-white w-1/6"><%= items.price%></li>
+    <li class="text-white w-1/6">
+      <img
+        class="h-44 w-40"
+        src="https://5.imimg.com/data5/SELLER/Default/2022/2/UA/RV/VK/147304712/whatsapp-image-2022-02-20-at-5-05-40-pm-4-.jpeg"
+        alt="Product-Image"
+      />
+    </li>
+  </ul>
+  <% }) %>
+</div>
