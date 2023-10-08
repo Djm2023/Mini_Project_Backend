@@ -1,24 +1,27 @@
-<div class="inner-container w-4/5 bg-black shadow-lg rounded-lg">
-  <ul class="flex border-b-2 font-bold text-xl py-5 ml-1">
-    <li class="text-white w-1/12">ID</li>
-    <li class="text-white w-1/6">Name</li>
-    <li class="text-white w-5/12">Description</li>
-    <li class="text-white w-1/6">Price</li>
-    <li class="text-white w-1/6">Image</li>
-  </ul>
-  <% product.map(items => { %>
-  <ul class="flex h-52 mt-5">
-    <li class="text-white w-1/12"><%= items.id%></li>
-    <li class="text-white w-1/6"><%= items.name%></li>
-    <li class="text-white w-5/12"><%= items.description %></li>
-    <li class="text-white w-1/6"><%= items.price%></li>
-    <li class="text-white w-1/6">
-      <img
-        class="h-44 w-40"
-        src="https://5.imimg.com/data5/SELLER/Default/2022/2/UA/RV/VK/147304712/whatsapp-image-2022-02-20-at-5-05-40-pm-4-.jpeg"
-        alt="Product-Image"
-      />
-    </li>
-  </ul>
-  <% }) %>
-</div>
+<!-- Table Container -->
+<section id="table" class="item-table">
+  <div class="outer-items-container flex">
+    <div class="items-container">
+      <ul class="items-heading">
+        <li class="id">ID</li>
+        <li class="name">Name</li>
+        <li class="description">Description</li>
+        <li class="price">Price</li>
+        <li class="image">Image</li>
+      </ul>
+      <% product.map((items) => { %>
+      <ul class="items">
+        <li class="id"><%= items.id %></li>
+        <li class="name"><%= items.name %></li>
+        <li class="description"><%= items.description %></li>
+        <li class="price"><%= items.price %></li>
+        <li class="image">
+          <img
+            src="https://bookpalace13.com/wp-content/uploads/2022/06/51-nXsSRfZL._SX328_BO1204203200_-1.jpg"
+          />
+        </li>
+      </ul>
+      <% }) %>
+    </div>
+  </div>
+</section>

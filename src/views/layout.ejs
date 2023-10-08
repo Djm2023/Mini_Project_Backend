@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="output.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ecommerce App</title>
   </head>
   <body>
-    <nav class="bg-black w-screen h-20 flex items-center container">
-      <div class="text-white font-bold text-2xl w-2/12">
-        <h1>Inventory App</h1>
-      </div>
-      <div class="nav-lists">
-        <ul class="text-white flex">
-          <li class="pr-5">Home</li>
-          <li class="pr-5">Products</li>
-          <li class="pr-5">Register</li>
-          <li class="pr-5">About Us</li>
-          <li class="pr-5">Contact Us</li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container mt-5 border-2 flex justify-center items-center">
+    <div class="container">
+      <!-- Nav Section -->
+      <section id="nav" class="nav flex">
+        <div class="nav-bar flex">
+          <div class="app-name">
+            <h1 class="text-white">Inventory App</h1>
+          </div>
+          <div class="nav-items">
+            <ul>
+              <li>Products</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Help</li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <%- body %>
     </div>
   </body>

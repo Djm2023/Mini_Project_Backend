@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  width: 100%;
+  height: 10vh;
+  /* border: 2px solid red; */
+  background-color: black;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-white {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+}
+.nav-bar {
+  display: flex;
+  width: 100%;
+}
+.app-name {
+  width: 50%;
+  /* border: 2px solid white; */
+}
+.app-name h1 {
+  display: flex;
+  align-items: center;
+}
+.nav-items {
+  width: 50%;
+  /* border: 2px solid white; */
+}
+.nav-items ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-items ul li {
+  color: white;
+  list-style: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.item-table {
+  width: 100%;
+  /* margin-top: 2rem; */
+}
+.outer-items-container {
+  width: 100%;
+  /* height: 100vh; */
+  padding-top: 2rem;
+  background-color: #22d4c2;
+}
+.items-container {
+  width: 80%;
+  /* border: 2px solid red; */
+  background: black;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 25px gray;
+  color: white;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+.items-container .items-heading {
+  display: flex;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid gray;
+}
+.items-container ul li {
+  list-style: none;
+}
+.items-container ul .id {
+  width: 5%;
+}
+.items-container ul .name {
+  width: 12%;
+}
+
+.items-container ul .description {
+  width: 45%;
+}
+
+.items-container ul .price {
+  width: 15%;
+}
+.items-container ul .image {
+  width: 20%;
+  /* border: 2px solid red; */
+}
+.items-container .items {
+  display: flex;
+  font-size: 2rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+.items-container .items li img {
+  width: 55%;
+}
+
+/* New-Product Page Css */
+.new-product-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #4cccd6;
+  /* margin-top: 2rem; */
+}
+.product-container {
+  width: 60%;
+  background-color: #4dd6c1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0px 0px 20px gray;
+  border-radius: 1rem;
+}
+.product-container h1 {
+  font-size: 2.5rem;
+  color: black;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.form-field {
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.new-name {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.new-name .product-name {
+  font-size: medium;
+  font-weight: 600;
+  padding-right: 7rem;
+}
+.new-name input {
+  font-size: medium;
+  width: 50%;
+  padding: 1.2rem;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: none;
+  color: white;
+  font-size: 2rem;
+}
+.new-name textarea{
+  font-size: medium;
+  width: 50%;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: none;
+  color: white;
+  font-size: 2rem;
+}
+.new-name .product-description {
+  font-size: medium;
+  font-weight: 600;
+  padding-right: 3rem;
+}
+.new-name .product-price {
+  font-size: medium;
+  font-weight: 600;
+  padding-right: 7rem;
+}
+.new-name .product-imageURL {
+  font-size: medium;
+  font-weight: 600;
+  padding-right: 3rem;
+}
+.btn{
+  width: 100%;
+}
+.btn button{
+  padding: 1.2rem 1rem;
+  background-color: #F5886E;
+  border: 0;
+  outline: 0;
+  color: white;
+  border-radius: 1rem;
+}
+.btn button:hover{
+  background-color: #29EBB2;
+}
