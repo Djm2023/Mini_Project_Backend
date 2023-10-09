@@ -55,6 +55,10 @@ html {
   font-size: 1.8rem;
   cursor: pointer;
 }
+.nav-items ul li a{
+  text-decoration: none;
+  color: white;
+}
 
 .item-table {
   width: 100%;
