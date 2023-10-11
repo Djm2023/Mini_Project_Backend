@@ -18,7 +18,7 @@ app.get("/", productController.getProducts);
 
 app.get("/new", productController.getAddForms);
 
-app.post("/", productController.addNewProduct);
+app.post("/", productController.postAddProduct);
 
 app.set("view engine", "ejs");
 

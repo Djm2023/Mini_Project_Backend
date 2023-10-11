@@ -205,3 +205,14 @@ html {
 .btn button:hover{
   background-color: #29EBB2;
 }
+.error{
+  width: 50%;
+  margin-top: 1rem; 
+  margin-left: 25%;
+  background-color: red;
+  height: 3vh;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}

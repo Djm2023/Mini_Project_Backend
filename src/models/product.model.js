@@ -6,7 +6,7 @@ export default class ProductModel {
     this.price = _price;
     this.imageUrl = _imageUrl;
   }
-  static get() {
+  static getAll() {
     return products;
   }
 
@@ -16,7 +16,7 @@ export default class ProductModel {
       productObj.name,
       productObj.productDescription,
       productObj.productPrice,
-      productObj.productImageURL,
+      productObj.productImageURL
     );
     products.push(newProducts);
   }
